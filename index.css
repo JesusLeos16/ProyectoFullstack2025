@@ -1,0 +1,44 @@
+.navegacion{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    height: 10vh;
+}
+body{
+    margin: 0;
+}
+#titulo{
+    align-self: center;
+    margin: 0;
+    color: #B83B28;
+
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.barra a{
+    color: white;
+    font-weight: bold;
+}
+.barra a:hover{
+    color: #E6AF2E;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.imgefecto{
+    filter: grayscale(100%);
+    transition: filter 0.4s ease-in-out;
+}
+.imgefecto:hover{
+    filter: grayscale(0%);
+}
