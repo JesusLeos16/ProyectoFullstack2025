@@ -1,44 +1,103 @@
 .navegacion{
-    background-color: black;
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    align-content: flex-start;
+    align-items: center;
     height: 10vh;
+    position: sticky;
+
+
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 body{
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 3000px;
 }
-#titulo{
+.logo{
+    margin: 0rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 75px;
+}
+.logo a{
     align-self: center;
-    margin: 0;
-    color: #B83B28;
-
-}
+    margin: 3rem 1rem 1rem;
+    color: black;
+    text-decoration: none;
+}   
 
 .barra{
     display: flex;
     align-items: center;
     gap: 20px;
+    margin: 2rem;
+    
 }
 .barra a{
-    color: white;
+    color: black;
     font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
 }
 .barra a:hover{
     color: #E6AF2E;
+}
+.barra a.activo{
+    color: #E6AF2E;
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
 }
 
 
 .hero{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    
-}
-.imgefecto{
+    color: white;
+    background-image: url(img/HERO.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     filter: grayscale(100%);
-    transition: filter 0.4s ease-in-out;
+    transition: filter .5s ease-in-out;
 }
-.imgefecto:hover{
+.hero:hover{
     filter: grayscale(0%);
+}
+.hero h2{
+    text-align: center;
+    font-size: 3rem;
+    width: 50rem;
+    text-shadow: 2px 2px 4px black, 0 0 10px black;
+    text-transform: uppercase;
+    margin: 4px;
+}
+.hero h3{
+    text-align: center;
+    font-size: 2rem;
+    width: 50rem;
+    text-shadow: 2px 2px 4px black, 0 0 10px black;
+    text-transform: uppercase;
+}
+.hero a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.hero a:hover{
+    transform: translateY(-5px);
 }
