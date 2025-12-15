@@ -147,17 +147,24 @@ body{
 }
 
 #academias{
+    margin: 0px;
     background-color: #1a1a1a;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 10px;
+    gap: 20px
+    
 }
+
 .cartas{
     background-color: white;
-    padding: 5rem;
+    padding: 2rem ;
+    gap: 8px;
     border-radius: 10px;
     color: black;
-    height: 20px;
+    width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,18 +172,32 @@ body{
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     
 }
+.cartas a{
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 4px;
+    border: 3px solid black;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+.cartas a:hover{
+    color: white;
+    background-color: #1a1a1a;
+}
 .cartas h5{
-    margin-top: 5px;
-    margin-bottom: 6px;
+    margin: 0;
     font-size: 1.2rem;
+    text-align: center;
 }
 .cartas p{
     align-self: flex-start;
     color: #666;         /* La dirección en gris para jerarquía visual */
     font-size: 0.9rem;
     margin: 0;
+    max-width: 80%;
 }
 .cartas img{
     width: 75px;
-    
+    object-fit: contain;
 }
