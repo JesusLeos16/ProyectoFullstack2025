@@ -28,7 +28,9 @@ body{
     justify-content: space-between;
 }
 .logo img{
-    width: 75px;
+    width: 70px;
+    max-height: 70px;
+    align-self: center;
 }
 .logo a{
     align-self: center;
@@ -148,10 +150,19 @@ body{
     background-color: #E6AF2E;
     color: white;
 }
-
+#academias {
+    background-color: #1a1a1a;
+    padding: 3rem;
+    display: block; 
+    text-align: center; 
+}
+#academias h2{
+    color: white;
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
 #academia-section{
     margin: 0px;
-    background-color: #1a1a1a;
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
@@ -159,6 +170,14 @@ body{
     padding: 3rem 10px;
     gap: 20px
     
+}
+#academia-section h2{
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    font-size: 3rem;
+    margin-top: auto;
+    color: white;
 }
 
 .cartas{
@@ -195,7 +214,7 @@ body{
 }
 .cartas p{
     align-self: flex-start;
-    color: #666;         /* La dirección en gris para jerarquía visual */
+    color: #666; 
     font-size: 0.9rem;
     margin: 0;
     max-width: 80%;
@@ -206,7 +225,6 @@ body{
 }
 .camino-section{
     height: 100%;
-    border: 3px solid black;
 }
 .camino-section h2{
     display: flex;
@@ -236,10 +254,7 @@ body{
     width: 50px;
     height: 35px;
     border-radius: 4px;
-
     flex-shrink: 0;
-    
-    border: 1px solid rgba(0,0,0,0.1);
 }
 #blanca{
     background-color: #ffffff;
@@ -260,3 +275,80 @@ body{
     background-color: #8B4513;
 }
 #negra   { background-color: #000000; border: 1px solid #000; }
+
+/*Por si se te olvida, este era de la ventana emergente, son los estilos*/
+[popover] {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: white;
+    margin: auto; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+[popover] img{
+    display: block;
+    margin: 0 auto;
+}
+/*fondito*/
+[popover]::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
+.btn-animado{
+    border-radius: 7px;
+    padding: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s;
+}
+.btn-animado::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+
+.btn-animado:hover::before{
+    width: 100%;
+}
+.btn-animado:hover{
+    color: white;
+    border-color: #000;
+}
+.btn-blanco::before{
+    background-color: #ffffff;  
+}
+.btn-blanco:hover{
+    color: black;
+}
+.btn-naranja::before{
+    background-color: #FF8C00;  
+}
+.btn-morado::before{
+    background-color: #8A2BE2;  
+}
+.btn-azul::before{
+    background-color: #0044cc;  
+}
+.btn-verde::before{
+    background-color: #008000;  
+}
+.btn-cafe::before{
+    background-color: #8B4513;  
+}
+.btn-negro::before{
+    background-color: #1a1a1a;  
+}
+
+
+
