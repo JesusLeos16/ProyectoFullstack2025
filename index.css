@@ -84,7 +84,7 @@ body{
     
 }
 /*El mentado responsive*/
-@media(max-width: 768px){
+@media(max-width: 765px){
     .hero-section{
         background-image: url(img/HEROdos.jpg);
         background-position: center top;
@@ -263,8 +263,7 @@ body{
     align-items: center;
     gap: 15px;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0 ,0.1);
+
 }
 .color-box{
     width: 50px;
@@ -289,6 +288,9 @@ body{
 }
 #cafe{
     background-color: #8B4513;
+}
+#rojo{
+    background-color: #e00b0b;
 }
 #negra   { background-color: #000000; border: 1px solid #000; }
 
@@ -365,6 +367,16 @@ body{
 .btn-negro::before{
     background-color: #1a1a1a;  
 }
+.btn-rojo:before{
+    background-color: #e00b0b;
+}
+.btn-rosa:before{
+    background-color: #E00B8E;
+}
+.btn-guinda:before{
+    background-color: #8F0404;
+}
+.btn-azulrempalago:before{
+    background-color: #0065FF;
 
-
-
+}
