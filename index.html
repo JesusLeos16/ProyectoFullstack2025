@@ -20,14 +20,14 @@
           aria-label="Abrir menu de navegacion"
           >&#9776;</label
         >
-        <div class="barra" class="activo">
+        <ul class="barra" class="activo">
           <li>
             <a href="index.html" class="activo" aria-current="page">INICIO</a>
           </li>
           <li><a href="historia.html">HISTORIA</a></li>
           <li><a href="academias.html">ACADEMIAS</a></li>
           <li><a href="contactos.html">CONTACTO</a></li>
-        </div>
+        </ul>
       </nav>
     </header>
     <main>
@@ -214,12 +214,13 @@
             </div>
           </article>
           <article class="cinta-card">
-            <div class="color-box" id="verde"></div>
+            <div class="color-box" id="verde" aria-hidden="true"></div>
             <div class="cinta-info">
               <h3>Verde - Ulakui</h3>
               <button
                 class="btn-animado btn-verde"
                 popovertarget="info-cinta-verde"
+                aria-label="Ver significado de la cinta verde"
               >
                 Ver cinta
               </button>
@@ -238,12 +239,13 @@
             </div>
           </article>
           <article class="cinta-card">
-            <div class="color-box" id="cafe"></div>
+            <div class="color-box" id="cafe" aria-hidden="true"></div>
             <div class="cinta-info">
               <h3>Cafe - Limaimua</h3>
               <button
                 class="btn-animado btn-cafe"
                 popovertarget="info-cinta-cafe"
+                aria-label="Ver significado de la cinta cafe"
               >
                 Ver cinta
               </button>
@@ -262,12 +264,13 @@
             </div>
           </article>
           <article class="cinta-card">
-            <div class="color-box" id="negra"></div>
+            <div class="color-box" id="negra" aria-hidden="true"></div>
             <div class="cinta-info">
               <h3>Negra - Lima Mua</h3>
               <button
                 class="btn-animado btn-negro"
                 popovertarget="info-cinta-negra"
+                aria-label="Ver significado de la cinta negra"
               >
                 Ver cinta
               </button>
@@ -286,9 +289,9 @@
           </article>
         </div>
       </section>
-      <section class="tecnicas-section">
+      <section class="tecnicas-section" aria-labelledby="titulo-tecnicas">
         <div class="tecnicas-header">
-          <h2>TÉCNICAS Y ENTRENAMIENTO</h2>
+          <h2 id="titulo-tecnicas">TÉCNICAS Y ENTRENAMIENTO</h2>
           <p>
             Lima Lama ofrece un sistema completo que desarrolla habilidades
             físicas, mentales y espirituales.
@@ -297,7 +300,10 @@
 
         <article class="fila-tecnica">
           <div class="imagen-mitad">
-            <img src="img/formas.jpg" alt="Entrenamiento formas" />
+            <img
+              src="img/formas.jpg"
+              alt="Practicante haciendo forma en un torneo"
+            />
           </div>
           <div class="texto-mitad">
             <div class="titulo-con-icono">
@@ -325,7 +331,10 @@
 
         <article class="fila-tecnica invertido">
           <div class="imagen-mitad">
-            <img src="img/armas.jpg" alt="Forma con armas" />
+            <img
+              src="img/armas.jpg"
+              alt="Maestro haciendo forma con un baston largo (bo)"
+            />
           </div>
           <div class="texto-mitad">
             <div class="titulo-con-icono">
@@ -353,7 +362,10 @@
 
         <article class="fila-tecnica">
           <div class="imagen-mitad">
-            <img src="img/puntos.jpg" alt="Combate por puntos" />
+            <img
+              src="img/puntos.jpg"
+              alt="Competidores practicando pelea por puntos"
+            />
           </div>
           <div class="texto-mitad">
             <div class="titulo-con-icono">
@@ -383,7 +395,10 @@
 
         <article class="fila-tecnica invertido">
           <div class="imagen-mitad">
-            <img src="img/continuo.jpg" alt="Combate continuo" />
+            <img
+              src="img/continuo.jpg"
+              alt="Niños practicantes peleando combate continuo"
+            />
           </div>
           <div class="texto-mitad">
             <div class="titulo-con-icono">
@@ -411,7 +426,10 @@
 
         <article class="fila-tecnica">
           <div class="imagen-mitad">
-            <img src="img/defensa.jpg" alt="Defensa personal" />
+            <img
+              src="img/defensa.jpg"
+              alt="Practicantes haciendo defensa personal"
+            />
           </div>
           <div class="texto-mitad">
             <div class="titulo-con-icono">
@@ -440,7 +458,10 @@
 
         <article class="fila-tecnica invertido">
           <div class="imagen-mitad">
-            <img src="img/campeonato.jpg" alt="Combate de campeonato" />
+            <img
+              src="img/campeonato.jpg"
+              alt="Campeon sostendiendo sus cinturones de campeonato"
+            />
           </div>
           <div class="texto-mitad">
             <div class="titulo-con-icono">
@@ -489,15 +510,24 @@
           </nav>
           <address class="footer-columna contacto-columna">
             <ul>
-              <li>Ubicacion pendiente</li>
-              <li><a href="numero">numero pendiente</a></li>
-              <li><a href="correo">limalama@cuu.com</a></li>
+              
+              <li><a href="+526144956596">+52 614 495 6596</a></li>
+              <li><a href="jelm060716@gmail.com">jelm060716@gmail.com</a></li>
             </ul>
             <nav class="redes" aria-label="Redes sociales">
               <a href="#" class="social-icon" aria-label="Facebook">Feibu</a>
               <a href="#" class="social-icon" aria-label="Instagram">Insta</a>
             </nav>
           </address>
+          <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218.8083293115994!2d-106.08535519987329!3d28.661716679310924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea435603c4f38f%3A0xa69b26c4bd0aaf14!2sChao%20Team!5e0!3m2!1ses-419!2smx!4v1768365156758!5m2!1ses-419!2smx"
+                width="1200"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
         </div>
         <div class="footer-bottom">
           <small>&copy; 2024 Lima Lama Chihuahua.</small>
