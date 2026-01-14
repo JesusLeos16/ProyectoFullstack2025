@@ -7,6 +7,97 @@
     height: 10vh;
     gap: 20px;
     padding: 0 20px;
+    min-height: 10vh;
+    position: relative;
+}
+.barra{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 2rem;
+    
+}
+.barra a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.barra a:hover{
+    color: #E6AF2E;
+}
+.barra a.activo{
+    color: #E6AF2E;
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+}
+
+.menu-toggle{
+    display: none;
+}
+.anvorgesa{
+    display: none;
+    color: #333;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.barra{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.barra li{
+    margin-left: 1.5rem;
+}
+.barra a{
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+@media(max-width: 900px){
+    .navegacion{
+        position: relative;
+        border-bottom: 1px solid #000;
+    }
+    .anvorgesa{
+        display: block;    
+        }
+    .barra{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        padding: 1rem 0;
+        border-top: 1px solid #000;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1); 
+        z-index: 9999;
+        border-bottom: none;
+    }
+    .barra li{
+        text-decoration: none;
+        width: 100%;
+        text-align: left;
+        margin: 0;
+    }
+    .barra a{
+        display: block;
+        padding: 1rem;
+        
+    }
+    .barra a.activo{
+        border-bottom: none;
+        background-color: #ffffff;
+        color: #E6AF2E;
+    }
+    .barra a:hover{
+        background-color: #f9f9f9;
+    }
+    .menu-toggle:checked ~ .barra{
+        display: flex;
+    }
 }
 header{
     position: sticky;
@@ -41,27 +132,6 @@ body{
     text-decoration: none;
 }   
 
-.barra{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 2rem;
-    
-}
-.barra a{
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all .3s ease-in-out;
-}
-.barra a:hover{
-    color: #E6AF2E;
-}
-.barra a.activo{
-    color: #E6AF2E;
-    border-bottom: 3px solid black;
-    padding-bottom: 5px;
-}
 
 
 .hero-section{

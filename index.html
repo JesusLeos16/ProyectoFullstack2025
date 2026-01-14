@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Proyecto</title>
+    <title>Lima Lama Chihuahua - Proyecto</title>
   </head>
   <body>
     <header>
-      <nav class="navegacion">
+      <nav class="navegacion" aria-label="Navegacion principal">
         <div class="logo">
-          <img src="img/limalamalogo.jpg" />
+          <img src="img/limalamalogo.jpg" alt="Escudo oficial de Lima Lama" />
           <h1 id="titulo"><a href="index.html">LIMA LAMA CHIHUAHUA</a></h1>
         </div>
-        <div class="barra">
-          <a href="index.html" class="activo">INICIO</a>
-          <a href="historia.html">HISTORIA</a>
-          <a href="academias.html">ACADEMIAS</a>
-          <a href="contactos.html">CONTACTOS</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label
+          for="menu-toggle"
+          class="anvorgesa"
+          aria-label="Abrir menu de navegacion"
+          >&#9776;</label
+        >
+        <div class="barra" class="activo">
+          <li>
+            <a href="index.html" class="activo" aria-current="page">INICIO</a>
+          </li>
+          <li><a href="historia.html">HISTORIA</a></li>
+          <li><a href="academias.html">ACADEMIAS</a></li>
+          <li><a href="contactos.html">CONTACTO</a></li>
         </div>
       </nav>
     </header>
     <main>
-      <section class="hero-section">
-        <h2>Defensa real, espíritu noble.</h2>
+      <section class="hero-section" aria-labelledby="hero-title">
+        <h2 id="hero-title">Defensa real, espíritu noble.</h2>
         <h3>
           Descubre el arte polinesio de la defensa personal en el corazón del
           norte.
@@ -31,9 +40,9 @@
         <a href="#academia-section">LIMA LAMA CHIHUAHUA</a>
       </section>
 
-      <section class="intro-section">
+      <section class="intro-section" aria-labelledby="intro-title">
         <div id="intro-texto">
-          <h3>LA MANO DE LA SABIDURIA</h3>
+          <h3 id="intro-title">LA MANO DE LA SABIDURIA</h3>
           <p>
             El Lima Lama es mucho más que golpes y patadas; es un sistema de
             defensa personal polinesio que equilibra la fluidez del movimiento
@@ -45,9 +54,7 @@
             carácter. No aprendemos a pelear para lastimar, sino para proteger.
           </p>
 
-          <a href="historia.html" class="btn" id="mano"
-            >Conoce nuestro origen y legado</a
-          >
+          <a href="historia.html" class="btn">Conoce nuestro origen y legado</a>
         </div>
         <div class="">
           <img
@@ -56,39 +63,39 @@
           />
         </div>
       </section>
-      <section id="academias">
-        <h2>ACADEMIAS DE LIMA LAMA CHIHUAHUA</h2>
+      <section id="academias" aria-labelledby="titulo-academias">
+        <h2 id="titulo-academias">ACADEMIAS DE LIMA LAMA CHIHUAHUA</h2>
         <div id="academia-section">
           <div class="cartas">
-            <img src="img/LogoSparta.png" alt="" />
+            <img src="img/LogoSparta.png" alt="Logo academia Sparta" />
             <h5>Academia Soldados de Sparta</h5>
             <p>Maestro Jesus Leos</p>
             <p>C. C.D.P., Subestación CFE, 31137 Chihuahua, Chih.</p>
             <button class="btn-animado btn-guinda">Conocer mas</button>
           </div>
           <div class="cartas">
-            <img src="img/logoChao.png" alt="" />
+            <img src="img/logoChao.png" alt="Logo academia central" />
             <h5>Academia Central de Lima Lama</h5>
             <p>Maestro Adrian Chao</p>
             <p>Av. Tecnológico 2906, Tecnológico, 31200 Chihuahua, Chih.</p>
             <button class="btn-animado btn-rojo">Conocer mas</button>
           </div>
           <div class="cartas">
-            <img src="img/LogoIkki.png" alt="" />
+            <img src="img/LogoIkki.png" alt="Logo academia Ikki Team" />
             <h5>Academia Ikki Team</h5>
             <p>Maestro Pedro Zapata</p>
             <p>C. 26a 5013, Dale, RUTA SUR II, 31050 Chihuahua, Chih.</p>
             <button class="btn-animado btn-negro">Conocer mas</button>
           </div>
           <div class="cartas">
-            <img src="img/logoHaiki.png" alt="" />
+            <img src="img/logoHaiki.png" alt="Logo academia haiki" />
             <h5>Academia Haiki</h5>
             <p>Maestro Erick Portillo</p>
             <p>C. Onceava 1024, Villa Juárez, 31064 Chihuahua, Chih.</p>
             <button class="btn-animado btn-azulrempalago">Conocer mas</button>
           </div>
           <div class="cartas">
-            <img src="img/logoTaika.jpg" alt="" />
+            <img src="img/logoTaika.jpg" alt="Logo academia Taika" />
             <h5>Academia Taika</h5>
             <p>Maestro Jose Acosta</p>
             <p>
@@ -98,7 +105,7 @@
             <button class="btn-animado btn-rosa">Conocer mas</button>
           </div>
           <div class="cartas">
-            <img src="img/logoAlika.jpg" alt="" />
+            <img src="img/logoAlika.jpg" alt="Logo academia Alika" />
             <h5>Academia Alika</h5>
             <p>Maestra Cinthia Gonzales</p>
             <p>31376, Av Palestina 9511, Tabalaopa, Chih.</p>
@@ -106,16 +113,17 @@
           </div>
         </div>
       </section>
-      <section class="camino-section">
-        <h2>EL CAMINO DEL GUERRERO</h2>
+      <section class="camino-section" aria-labelledby="titulo-camino">
+        <h2 id="titulo-camino">EL CAMINO DEL GUERRERO</h2>
         <div class="cintas">
           <article class="cinta-card">
-            <div class="color-box" id="blanca"></div>
+            <div class="color-box" id="blanca" aria-hidden="true"></div>
             <div class="cinta-info">
               <h3>Blanco - Amaka</h3>
               <button
                 class="btn-animado btn-blanco"
                 popovertarget="info-cinta-blanca"
+                aria-label="Ver significado de cinta blanca"
               >
                 Ver cinta
               </button>
@@ -134,12 +142,13 @@
             </div>
           </article>
           <article class="cinta-card">
-            <div class="color-box" id="naranja"></div>
+            <div class="color-box" id="naranja" aria-hidden="true"></div>
             <div class="cinta-info">
               <h3>Naranja - Moli</h3>
               <button
                 class="btn-animado btn-naranja"
                 popovertarget="info-cinta-naranja"
+                aria-label="Ver significado de cinta naranja"
               >
                 Ver cinta
               </button>
@@ -155,12 +164,13 @@
             </div>
           </article>
           <article class="cinta-card">
-            <div class="color-box" id="morada"></div>
+            <div class="color-box" id="morada" aria-hidden="true"></div>
             <div class="cinta-info">
               <h3>Morada - Lua</h3>
               <button
                 class="btn-animado btn-morado"
                 popovertarget="info-cinta-morada"
+                aria-label="Ver significado de cinta morada"
               >
                 Ver cinta
               </button>
@@ -179,12 +189,13 @@
             </div>
           </article>
           <article class="cinta-card">
-            <div class="color-box" id="azul"></div>
+            <div class="color-box" id="azul" aria-hidden="true"></div>
             <div class="cinta-info">
               <h3>Azul - Moana</h3>
               <button
                 class="btn-animado btn-azul"
                 popovertarget="info-cinta-azul"
+                aria-label="Ver informacion de cinta azul"
               >
                 Ver cinta
               </button>
@@ -482,7 +493,7 @@
               <li><a href="numero">numero pendiente</a></li>
               <li><a href="correo">limalama@cuu.com</a></li>
             </ul>
-            <nav class="social-links" aria-label="Redes sociales">
+            <nav class="redes" aria-label="Redes sociales">
               <a href="#" class="social-icon" aria-label="Facebook">Feibu</a>
               <a href="#" class="social-icon" aria-label="Instagram">Insta</a>
             </nav>
