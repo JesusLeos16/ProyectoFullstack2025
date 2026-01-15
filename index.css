@@ -646,6 +646,7 @@ body{
     color: #b0b0b0;
     text-decoration: none;
     transition: color 0.3s ease;
+    
 }
 .footer-columna a:hover{
     color: #E6AF2E;
@@ -665,6 +666,7 @@ address.footer-columna a:hover{
     align-items: center;
     justify-content: center;
 }
+
 @media(max-width:900px){
     /*Footer feo, que no se te olvide cambiarlo manana perro xd*/
     .footer-section{
