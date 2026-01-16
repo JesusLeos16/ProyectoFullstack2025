@@ -310,14 +310,14 @@ header{
     display: inline-block;
     padding: 5px 5px;
     border-radius: 4px;
-    border: 3px solid black;
+    border: 2px solid black;
     text-decoration: none;
     color: #1a1a1a;
+    background-color: white;
     transition: all 0.3s ease;
 }
 .cartas a:hover{
     color: white;
-    background-color: #1a1a1a;
 }
 .cartas h5{
     margin: 0;
@@ -412,10 +412,11 @@ header{
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
 }
+
 .btn-animado{
     border-radius: 7px;
     padding: 6px;
-    background-color: transparent;
+    background-color: white;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -429,7 +430,6 @@ header{
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: black;
     z-index: -1;
     transition: width 0.4s ease;
 }

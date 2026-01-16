@@ -1,0 +1,119 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" /> 
+    <title>¡KIAI! - Sitio en Entrenamiento</title>
+    <style>
+      /* CSS EXCLUSIVO PARA ESTA PÁGINA (Para no ensuciar tu index.css) */
+      
+      .zona-desastre {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #1a1a1a; /* Tu negro de fondo */
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Un poco de humor visual */
+      .icono-triste {
+        font-size: clamp(4rem, 10vw, 8rem);
+        margin-bottom: 1rem;
+        animation: flotar-como-ninja 3s ease-in-out infinite;
+      }
+
+      .titulo-roto {
+        font-size: clamp(2rem, 5vw, 4rem);
+        color: #E6AF2E; /* Tu amarillo */
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 0px #000;
+      }
+
+      .excusa-del-dev {
+        font-size: 1.2rem;
+        max-width: 600px;
+        line-height: 1.6;
+        color: #ccc;
+        margin-bottom: 3rem;
+      }
+
+      /* Animación sencilla */
+      @keyframes flotar-como-ninja {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(5deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+
+      /* Clase especial para el botón de regreso */
+      .btn-retirada {
+        background-color: #D32F2F; /* Rojo de peligro */
+        color: white;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: transform 0.2s;
+        border: 2px solid transparent;
+      }
+
+      .btn-retirada:hover {
+        transform: scale(1.05);
+        background-color: transparent;
+        border-color: #D32F2F;
+        color: #D32F2F;
+      }
+      
+      .btn-retirada:focus {
+        outline: 3px solid #E6AF2E;
+      }
+
+      /* El cinturón de la vergüenza (decorativo) */
+      .cinta-en-proceso {
+        height: 20px;
+        width: 100%;
+        background: repeating-linear-gradient(
+          45deg,
+          #E6AF2E,
+          #E6AF2E 20px,
+          #1a1a1a 20px,
+          #1a1a1a 40px
+        );
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#mensaje-fail" class="skip-link">Saltar al mensaje de error</a>
+
+    <main id="mensaje-fail" class="zona-desastre">
+      
+      <div class="icono-triste" aria-hidden="true">🥋🚧</div>
+
+      <h1 class="titulo-roto">Ta en construccion</h1>
+      
+      <div class="excusa-del-dev">
+        <p>
+          Esta sección está entrenando en el dojo todavía.<br>
+          Intenté aplicar una técnica avanzada de código llamada 
+          <em>"Copiar y Pegar"</em> 
+        </p>
+        <p>
+            El que lo estaba desarrollando (yo) se hizo pato y no entrevisto a las academias
+        </p>
+      </div>
+
+      <a href="index.html" class="btn-retirada">Volver al Tatami (Inicio)</a>
+
+      <div class="cinta-en-proceso" aria-hidden="true"></div>
+    </main>
+  </body>
+</html>

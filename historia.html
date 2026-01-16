@@ -8,19 +8,23 @@
   </head>
   <body>
     <header>
-      <!--Preguntarle a kira si puedo repetir h1 pero con otro texto-->
-      <nav class="navegacion">
+      <nav class="navegacion" aria-label="Navegacion principal">
         <div class="logo">
-          <img src="img/limalamalogo.png" />
+          <img src="img/limalamalogo.jpg" alt="Escudo oficial de Lima Lama" />
           <h1 id="titulo"><a href="index.html">LIMA LAMA CHIHUAHUA</a></h1>
         </div>
-
-        <div class="barra">
-          <a href="index.html">INICIO</a>
-          <a href="historia.html" class="activo">HISTORIA</a>
-          <a href="academias.html">ACADEMIAS</a>
-          <a href="contactos.html">CONTACTOS</a>
-        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label
+          for="menu-toggle"
+          class="anvorgesa"
+          aria-label="Abrir menu de navegacion"
+          >&#9776;</label
+        >
+        <ul class="barra" class="activo">
+          <li>
+            <a href="index.html" aria-current="page">INICIO</a>
+            <a href="index.html" class="activo" aria-current="page">HISTORIA</a>
+        </ul>
       </nav>
     </header>
     <main>
