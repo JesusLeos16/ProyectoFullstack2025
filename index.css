@@ -47,7 +47,9 @@ body{
     border-bottom: 3px solid black;
     padding-bottom: 5px;
 }
-
+.icono-rojo{
+    font-size: 1rem;
+}
 .menu-toggle{
     display: none;
 }
