@@ -48,7 +48,12 @@ body{
     padding-bottom: 5px;
 }
 .icono-rojo{
-    font-size: 1rem;
+    background-color: red;
+    width: auto;
+    height: 100%;
+    padding-top: .75rem;
+    border-radius: 35px;
+    
 }
 .menu-toggle{
     display: none;
@@ -116,6 +121,17 @@ body{
     .menu-toggle:checked ~ .barra{
         display: flex;
     }
+    .icono-rojo{
+    background-color: red;
+    width: auto;
+    height: 3rem;
+    padding-top: .75rem;
+    border-radius: 35px;
+    
+}
+}
+.fa-solid{
+    color: white;
 }
 header{
     position: sticky;
